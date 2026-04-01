@@ -7,7 +7,7 @@ const sortSelect = document.getElementById("sort");
 
 let allCountries = [];
 
-// Fetch API
+
 fetch("https://restcountries.com/v3.1/all?fields=name,capital,population,region,flags")
   .then(res => res.json())
   .then(data => {
@@ -16,7 +16,7 @@ fetch("https://restcountries.com/v3.1/all?fields=name,capital,population,region,
     displayCountries(allCountries);
   });
 
-// Display function
+
 function displayCountries(countries) {
   container.innerHTML = "";
 
@@ -36,23 +36,23 @@ function displayCountries(countries) {
   });
 }
 
-// Filter + Search + Sort
+
 function updateUI() {
   let filtered = allCountries;
 
-  // Search
+
   const searchValue = searchInput.value.toLowerCase();
   filtered = filtered.filter(c =>
     c.name.common.toLowerCase().includes(searchValue)
   );
 
-  // Filter by region
+
   const region = regionFilter.value;
   if (region) {
     filtered = filtered.filter(c => c.region === region);
   }
 
-  // Sort
+
   const sortType = sortSelect.value;
   if (sortType === "name") {
     filtered = filtered.sort((a, b) =>
@@ -67,7 +67,7 @@ function updateUI() {
   displayCountries(filtered);
 }
 
-// Event listeners
+
 searchInput.addEventListener("input", updateUI);
 regionFilter.addEventListener("change", updateUI);
 sortSelect.addEventListener("change", updateUI);

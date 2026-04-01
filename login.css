@@ -1,5 +1,5 @@
 
-/* Background */
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -10,7 +10,7 @@ body {
   background-repeat: no-repeat;
 }
 
-/* Dark overlay for readability */
+
 body::before {
   content: "";
   position: fixed;
@@ -19,20 +19,20 @@ body::before {
   z-index: 0;
 }
 
-/* Content above overlay */
+
 body > * {
   position: relative;
   z-index: 1;
 }
 
-/* Heading */
+
 h1 {
   text-align: center;
   color: #ffffff;
   margin-top: 20px;
 }
 
-/* Controls (search + filter + sort) */
+
 input, select {
   padding: 10px;
   margin: 10px;
@@ -43,7 +43,7 @@ input, select {
   background: rgba(255,255,255,0.8);
 }
 
-/* Container */
+
 #countries-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -51,7 +51,7 @@ input, select {
   padding: 20px;
 }
 
-/* Card */
+
 .card {
   background: rgba(255, 248, 240, 0.9);
   backdrop-filter: blur(10px);
@@ -65,18 +65,18 @@ input, select {
   transition: transform 0.3s ease;
 }
 
-/* Hover effect */
+
 .card:hover {
   transform: translateY(-6px);
 }
 
-/* Image */
+
 .card img {
   width: 100%;
   border-radius: 10px;
 }
 
-/* Text */
+
 .card h3 {
   color: #8B5E3C;
 }

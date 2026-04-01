@@ -10,7 +10,7 @@ h1 {
   margin-top: 20px;
 }
 
-/* Controls */
+
 input, select {
   padding: 10px;
   margin: 10px;
@@ -18,7 +18,7 @@ input, select {
   border: 1px solid #ccc;
 }
 
-/* Grid */
+
 #countries-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -26,7 +26,6 @@ input, select {
   padding: 20px;
 }
 
-/* Card */
 .card {
   background: white;
   border-radius: 12px;
