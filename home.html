@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Geonex</title>
+  <link rel="stylesheet" href="home.css">
+</head>
+<body>
+
+  <h1>🌍 Geonex</h1>
+
+  <!-- Search -->
+  <input type="text" id="search" placeholder="Search country...">
+
+  <!-- Filter -->
+  <select id="regionFilter">
+    <option value="">All Regions</option>
+    <option value="Asia">Asia</option>
+    <option value="Europe">Europe</option>
+    <option value="Africa">Africa</option>
+    <option value="Americas">Americas</option>
+    <option value="Oceania">Oceania</option>
+  </select>
+
+  <!-- Sort -->
+  <select id="sort">
+    <option value="">Sort By</option>
+    <option value="name">Name (A-Z)</option>
+    <option value="population">Population</option>
+  </select>
+
+  <p id="loading">Loading countries...</p>
+
+  <div id="countries-container"></div>
+
+  <script src="home.js"></script>
+</body>
+</html>
