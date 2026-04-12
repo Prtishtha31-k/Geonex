@@ -65,3 +65,8 @@ Tech Stack
 	•	CSS
 	•	JavaScript 
 	•	Fetch API
+
+
+Deployment
+
+https://69dbd0118e5ab8ff606ee3c7--creative-twilight-4dd621.netlify.app/login.html
